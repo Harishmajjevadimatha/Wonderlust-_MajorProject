@@ -1,7 +1,7 @@
 const Listing = require("../models/listing");
 const {listingSchema} = require("../schema.js");
 const axios = require("axios");
-const ExpressError = require("../Utils/ExpressError.js");
+const ExpressError = require("../utils/ExpressError.js");
 
 module.exports.index = (async(req,res) =>{
     const allListings = await Listing.find({});
